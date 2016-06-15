@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -16,7 +18,7 @@
 		<div id="slider">
 			<div id="slide_text">
 				<h1>Орлюк Людмила</h1>
-				<h3>Front-end developer web-UI</h3>
+					<h3>Front-end developer web-UI</h3>
 			</div>
             	<figure>
                	 	<img src="img/slider-img1.jpg" alt="slide 1"/>
@@ -25,23 +27,31 @@
                 	<img src="img/slider-img2.jpg" alt="slide 2"/>
            		</figure>
         </div>
-        
-         	<header>
-			<nav>
-				<ul>
-					<li><a href="#about">About Me</a></li> 
-					<li><a href="#education">My Education</a></li>
-					<li><a href="#skill">My Skills</a></li> 
-					<li><a href="#portfolio">My Portfolio</a></li>
-					<li><a href="#contact">Contact Me</a></li>
-				</ul>
-			</nav>
-		</header>
-	
-
-<section class="portfolio">
-	<div >
-				<div><h2>Мої роботи</h2></div>
+        <header>
+                <nav class="navbar navbar-default navbar-fixed-top header_color">
+	        			<div class="container">
+		           				 <div class="navbar-header page-scroll">
+		                			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					                    <span class="sr-only">Toggle navigation</span>
+					                    <span class="icon-bar"></span>
+					                    <span class="icon-bar"></span>
+					                    <span class="icon-bar"></span>
+					                </button>
+		                		<a class="navbar-brand page-scroll" href="#slider">Orlyuk</a>
+		           			 </div>
+		            		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				                <ul class="nav navbar-nav navbar-right">
+				                    <li><a class="page-scroll red" href="#about">About Me</a></li>
+				                    <li><a class="page-scroll" href="#skill">My Skills</a></li>
+				                    <li><a class="page-scroll" href="#portfolio">My Portfolio</a></li>
+				                    <li><a class="page-scroll" href="#contact">Contact Me</a></li>
+				                </ul>
+		            		</div>
+	       				</div>
+    			</nav>
+     	</header>    	
+<section class="portfolio" id="portfolio">
+					<div><h2>Мої роботи</h2></div>
 						<div class="table2">
 							<div class="row2">
 								<div class="cell2">
@@ -60,84 +70,90 @@
 									<a href="../proekt/index.html"><img src="img/job_4.png" alt="portfolio1"></a>
 								</div>
 							</div>
+						</div>
 </section>
-
-
-<section class = "about_me">
+<section class ="about_me" id="about">
 		<h2>Про мене </h2>
-		<div class="row">
-				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 cell_img">
-						<img src="img/i_2.jpg" alt="foto Orlyuk">
-				</div>		
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cell_skills">
-					<ol>
-						<li>відповідальна, пунктуальна, порядна</li>
-						<li>розвинені аналітичні здібності та здатність швидко навчатися </li>
-						<li>комунікабельна, вмію працювати у великому колективі</li>
-						<li>вмію досягати поставленої мети</li>
-						<li>вимоглива до себе та до інших</li>
-						<li>відсутні шкідливі звички</li>
-						
-					</ol>
-		</div>
-			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 r">
-		</div>
+			<div class="row">
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 cell_img">
+							<img src="img/i_2.jpg" alt="foto Orlyuk">
+					</div>		
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cell_skills">
+									<ol>
+										<li>відповідальна, пунктуальна, порядна</li>
+										<li>розвинені аналітичні здібності та здатність швидко навчатися </li>
+										<li>комунікабельна, вмію працювати у великому колективі</li>
+										<li>вмію досягати поставленої мети</li>
+										<li>вимоглива до себе та до інших</li>
+										<li>відсутні шкідливі звички</li>
+										
+									</ol>
+						</div>
+							<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 r">
+						</div>
+			</div>
 </section>
-<section  class="skills">
+<section  class="skills" id="skill">
 	<div class="conteiner1">
 		<div class="row">
-				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
   				</div>
-  				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+  				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
   					<div class="line">
   						<div class="small_raund"></div>
   					</div>
   				</div>
-  				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-  					<div id="comment_bubble1">
-  						<p>Успішне працевлаштування протягом останніх 10 років. Гарні рекомендації попередніх роботодовців.</p>
+  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+  					<div class="interval">
+  						<div id="comment_bubble1">
+  						<div class="text_center">
+  							<p>Успішне працевлаштування протягом останніх 10 років. Гарні рекомендації попередніх роботодовців.</p>
+  						</div>
+  						</div>
   					</div>
   				</div>
    		</div>
  		<div class="row">
-  				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
   					<div id="comment_bubble2">
   						<div class="text_center">
   							<p>Постійне самовдосконалення завдяки самоосвіті та завдяки успішній співпраці з професіоналами своєї справи.</p>
   						</div>
   					</div>
   				</div>
-  				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+  				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
   					<div class="line">
   						<div class="small_raund1"></div>
   					</div>
   				</div>
-  				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
   						
   				</div>
  		</div>
  		<div class="row">
-  				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
   						
   				</div>
-  				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+  				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
   					<div class="line">
   						<div class="small_raund">
   						</div>
   					</div>
   				</div>
-  				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
   					<div id="comment_bubble3">
-  						<p>Робота в банківській сфері, робота з клієнтами, співпраця з державними організаціями, нотаріусами, страховими компаніями.</p>
+  						<div class="text_center">
+  							<p>Робота в банківській сфері, робота з клієнтами, співпраця з державними організаціями, нотаріусами, страховими компаніями.</p>
+  						</div>
   					</div>
   				</div>
  		</div>
+ 	</div>
 </section>
-
 <footer>
-	<div class = "row">
-	<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-		<form class="long">
+	<div class = "row" id="contact">
+	<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 ">
+		<form class="long col_center">
 								<div class="form-group ">
 									<div class="form-group">
     									<label for="exampleInputName2"></label>
@@ -154,17 +170,17 @@
 						   </form>
 	</div>
 	<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-		<h2>Get in Touch</h2>
-		<p>Lorlyuk@mail.ru</p><br>
-		<p>+38 (099) 327 40 49</p><br>
-		<p>Orlyuk Lyudmyla</p><br>
+		<div class="contact">
+			<h2>Get in Touch</h2>
+			<p>Lorlyuk@mail.ru</p><br>
+			<p>+38 (099) 327 40 49</p><br>
+			<p>Orlyuk Lyudmyla</p><br>
+		</div>
 	</div>
 </div>
-
 </footer>
-
-
-
-
+<div class="row down_black">
+	<p></p>
+</div>
 </body>
 </html>	

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Приемы обьектно-ориентированого проектирования"/>
+	<meta name="keywords" content="OOP паттерныб обьектно-ориентированные порождающие"/>
+	<title>OOP methods</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+   <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="book/prot_1.html"> Е. Гамма</a></li>
+                    <li><a href="book/builder_p.html">Р. Хелм</a></li>
+                    <li><a href="book/prototype_p.html">Р. Джонсон</a></li>						
+                    <li><a href="http://www.sugardas.lt/~p2d/books/Priemioop.pdf" target="_blank">Д. Влиссидес</a></li>
+                </ul>
+            </nav>
+            <span class="resolution"></span>
+        </header>
+        <div id="slider">
+            <div id="slide_text">
+                <h1>Приемы обьектно-ориентированного проектирования</h1>
+                <h2>Порождающие паттерны</h2>
+            </div>
+            <figure>
+                <img src="img/slider-img1.jpg" alt="slide 1"/>
+                <img src="img/slider-img2.jpg" alt="slide 2"/>
+                <img src="img/slider-img3.jpg" alt="slide 3"/>
+                <img src="img/slider-img2.jpg" alt="slide 2"/>                
+            </figure>
+        </div>
+        <section id="team">            
+            <h2>Наша команда</h2>
+            <ul>
+                <li>
+                    <div class="holder">
+                        <img class="col" src="img/team-01.jpg" alt="Khmara" />
+                        <h2 class="caption">Хмара Андрій</h2>
+                    </div>
+                </li>
+                <li>
+                    <div class="holder">
+                        <img class="col" src="img/team-02.png" alt="Orlyuk" />
+                        <h2 class="caption">Орлюк Людмила</h2>
+                     </div>
+                </li>
+                <li>
+                    <div class="holder">
+                        <img class="col" src="img/team-04.jpg" alt="Vorochuk" />
+                        <h2 class="caption">Ворочук Андрій</h2>
+                     </div>
+                </li>
+                <li>
+                    <div class="holder">
+                        <img class="col" src="img/team-03.png" alt="Olhovyk" />
+                        <h2 class="caption">Ольховик Борис</h2>
+                    </div>
+                </li>
+            </ul>
+            <!--/div-->
+        </section>
+        <section id="patt">
+                            <h2>Список паттернів</h2>
+                                <div class="inner">
+
+                            <section class="tiles">
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-01.jpg" alt="Prototype pattern" />
+                                    </span>
+                                    <a href="book/prot_1.html">
+                                        <h2>Порождающие паттерны</h2>
+                                        <div class="content">
+                                            <p>Порождающие паттерны проектирования абстрагируют процесс инстанцирования. Они помогут сделать систему независимой от способа создания...</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-08.jpg" alt="Pattern" />
+                                    </span>
+                                    <a href="book/pattern.html">
+                                        <h2>Abstract Factory</h2>
+                                        <div class="content">
+                                            <p>Рассмотрим инструментальную программу для создания пользовательского интерфейса, поддерживающего разные стандарты внешнего облика,например...</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-02.jpg" alt="Builder pattern" />
+                                    </span>
+                                    <a href="book/builder_p.html">
+                                        <h2>Паттерн Builder</h2>
+                                        <div class="content">
+                                            <p>Отделяет конструирование сложного объекта от его представления, так что в результате одного и того же процесса конструирования могут получаться разные представления...</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-03.jpg" alt="Factory Method" />
+                                    </span>
+                                    <a href="book/factory_method.html">
+                                        <h2>Factory Method</h2>
+                                        <div class="content">
+                                            <p>Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. Фабричный метод позволяет классу делегировать инстанцирование подклассам...</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-04.jpg" alt="Prototype pattern" />
+                                    </span>
+                                    <a href="book/prototype_p.html">
+                                        <h2>Prototype</h2>
+                                        <div class="content">
+                                            <p>Задает виды создаваемых объектов с помощью экземпляра-прототипа и создает новые объекты путем копирования этого прототипа...</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-05.jpg" alt="Singleton pattern" />
+                                    </span>
+                                    <a href="book/Singleton.html">
+                                        <h2>Singleton</h2>
+                                        <div class="content">
+                                            <p>Одиночка - паттерн, порождающий объекты.Гарантирует, что у класса есть только один экземпляр, и предоставляет к нему глобальную точку доступа...</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-06.jpg" alt="Discuss" />
+                                    </span>
+                                    <a href="book/Final.html">
+                                        <h2>Обсуждения</h2>
+                                        <div class="content">
+                                            <p>Есть два наиболее распространенных способа параметризовать систему классами создаваемых ей объектов. Первый способ - порождение подклассов от класса, создающего объекты...</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="style">
+                                    <span class="image">
+                                        <img src="img/work-07.jpg" alt="Origin book" />
+                                    </span>
+                                    <a href="http://www.sugardas.lt/~p2d/books/Priemioop.pdf">
+                                        <h2>Оригинал книги</h2>
+                                        <div class="content">
+                                            <p>Одна из самых хорошо написанных и глубоких книг, которые мне доводилось читать...эта работа доказывает необходимость паттернов самым правильным способом: не рассуждениями, а примерами...</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                            </section>
+                        </div>
+     
+        </section>
+        <footer>
+            
+            <p>Copyright &copy; 2016 | Design: Success</p>
+            
+        </footer>
+    </div>
+</body>
+</html>

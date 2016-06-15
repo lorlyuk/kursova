@@ -12,7 +12,11 @@
 body { 
     margin: 0; 
     font-family: 'Titillium Web', sans-serif;
+    min-width: 320px;
 
+}
+h2 {
+  text-align: center;
 }
 div#slider { 
     overflow: hidden; 
@@ -50,29 +54,13 @@ div#slider figure {
 }
 
 /*---------------------------------------------------------------*/
-header {
+header .header_color{
   background: #26292e;
-  width: 100vw;
-  height: 50px;
+  border-bottom: 1px solid #ad5053;
 }
 
-nav ul {
-	float: right;
-  margin-right: 5%;
-  margin-top: 2%;
-  
-}
-ul li {
-	display: inline;
-  list-style: none;
-}
-
-nav a {
-	padding: 15px;
+ li .red :hover {
     
-}
-nav a:hover {
-    text-decoration: none;
     color: #ad5053;
 }
 /*---------------------------------------------------------------*/
@@ -89,11 +77,7 @@ nav a:hover {
     padding: 5%;
     font-weight: bold;
 }
-.portfolio img {
-	
 
-	
-}
 .table2 {
   width: 100%;
   display: table;
@@ -125,7 +109,6 @@ nav a:hover {
 .about_me {
   width: 100vw;
   background: #26292e;
-  padding-left: 10%;
 }
 
 .about_me img {
@@ -160,12 +143,6 @@ nav a:hover {
  color: #54575e;
 
 }
-.cell_img {
- 
-}
-.r {
- 
-}
 
 .conteiner1 {
   background: #26292e;
@@ -176,6 +153,150 @@ nav a:hover {
     color: #000;
 }
 
+#comment_bubble1 {
+    background: #54575e;
+    position: relative;
+    padding: 7%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#comment_bubble2 {
+    background: #ad5053;
+    position: relative;
+    padding: 5%;
+    padding-top: 7%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#comment_bubble3 {
+   background: #54575e;
+    position: relative;
+    padding: 7%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+ }
+.text_center {
+  padding: 1%;
+ 
+}
+footer {
+  background: #2f3238;
+  width: 100vw;
+  padding: 5%;
+}
+form {
+  width: 70%;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+.cell2 {
+  display: inline-block;
+  text-align: center;
+
+}
+.portfolio img {
+  width: 80vw;
+}
+.cell_img ,.cell_skills {
+  width: 90vw;
+  padding-left: 10%;
+}
+.cell_img img {
+  width: 70vw;
+  padding-left: 10vw;
+}
+.col_center {
+  margin: 0 auto;
+}
+.contact {
+  text-align: center;
+  padding-top: 13%;
+}
+.conteiner1 {
+  padding-right: 13vw;
+}
+.interval {
+ 
+  margin-bottom: 5px;
+}
+button {
+  margin-top: 3%;
+}
+}
+
+@media only screen and (min-width : 480px) {
+
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+.cell2 img {
+  width: 40vw;
+  padding-left: 2vw;
+}
+.cell_img {
+  width: 30vw;
+}
+.cell_img img {
+  width: 30vw;
+  padding-top: 25%;
+  padding-left: 1%;
+}
+.cell_skills { 
+width: 55vw;
+}
+
+.portfolio {
+  background: #2f3238;
+  width: 100vw;
+  padding: 10%;
+}
+
+.portfolio h2 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 5%;
+    font-weight: bold;
+}
+
+.table2 {
+  width: 100%;
+  display: table;
+  margin: 0px auto;
+   
+}
+.row2 {
+    display: table-row;
+}
+.cell2 {
+    display: table-cell;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.cell2 img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.cell2 img:hover {
+   -webkit-filter: grayscale(100%);
+}
+
+}
+@media only screen and (min-width : 992px) {
 div .line {
     margin: 0 auto;
 }
@@ -194,7 +315,7 @@ div .line {
     right: -7px;
     position: absolute;
     background-color:  #54575e;
-    margin-top: 55px;
+    margin-top: 75px;
 }
 .small_raund1 {
     width: 30px;
@@ -205,11 +326,11 @@ div .line {
     right: -12px;
     position: absolute;
     background-color:  #54575e;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 #comment_bubble1 {
     width: auto;
-    height: 130px;
+    height: 170px;
     background: #54575e;
     position: relative;
     padding: 8%;
@@ -222,15 +343,13 @@ div .line {
     width: 0;
     height: 0;
     right: 100%;
-    top: 55px;
+    top: 75px;
     position: absolute;
     border-top: 13px solid transparent;
     border-right: 26px solid #54575e;
     border-bottom: 13px solid transparent;
 }
-#comment_bubble1:before {
-    display: none;
-}
+
 #comment_bubble2 {
     width: auto;
     height: 170px;
@@ -255,7 +374,7 @@ div .line {
 }
 #comment_bubble3{
     width: auto;
-    height: 140px;
+    height: 170px;
     background: #54575e;
     position: relative;
     padding: 7%;
@@ -268,21 +387,47 @@ div .line {
     width: 0;
     height: 0;
     right: 100%;
-    top: 55px;
+    top: 75px;
     position: absolute;
     border-top: 13px solid transparent;
     border-right: 26px solid #54575e;
     border-bottom: 13px solid transparent;
 }
-#comment_bubble3:before {
-    display: none;
+.cell_skills { 
+padding-top: 3%;
+}
 }
 
-footer {
-  background: #2f3238;
-  width: 100vw;
-  padding: 5%;
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1024px) {
+.about_me h2 {
+  padding-top: 7%;
 }
-form {
-  width: 70%;
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1280px) {
+
+.cell_img img {
+  width: 20vw;
+  padding-top: 25%;
+  
+}
+.cell_skills { 
+  padding-left: 1%;
+  font-size: 1.2em;
+  margin-left: 2vw;
+}
+
+.contact {
+  padding-top: 13%;
+  font-size: 1.5em;
+}
+.down_black {
+  width: 100vw;
+  height: 20%;
+  background: #26292e;
+  padding: 40px;
+  border-top: 1px solid #ad5053;
+}
 }
