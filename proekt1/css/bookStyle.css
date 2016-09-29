@@ -1,0 +1,81 @@
+body {
+	background-image: url('../img/bg.png');
+	min-height: 768px;
+	min-width: 1600px;
+	margin: 0;
+}
+nav{
+	height: 100px;
+	background-color: rgba(71, 82, 89, 0.85);
+}
+header ul{
+	margin: 33px auto;
+	text-align: right;
+	float: left;
+}
+header ul li{
+	display: inline-block;
+	color: rgba(240, 241, 241, 0.9);
+	border: 2px solid transparent;
+	text-transform: uppercase;
+	font: 14px 'Times New Roman',Times,sans-serif;
+}
+header ul li a{
+	text-decoration: none;
+	color: rgba(240, 241, 241, 0.9);
+}
+header ul li a:hover{
+	background:rgba(30, 82, 89, 1);
+}
+
+div.content {
+	width: 70%;
+	text-align: justify;
+	padding: 5%;
+	background-color: white;
+	display: inline-block;
+	position: relative;
+	left: 10%;
+	
+}
+#button {	
+	position: fixed;
+	left:2%;
+	top: 92%;
+	display: inline-block;
+	font-size: 90%;
+  	font-weight: 700;
+  	color: rgb(209,209,217);
+  	text-decoration: none;
+  	text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  	padding: .0em 1em;
+  	outline: none;
+  	border-radius: 3px;
+  	background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+  	box-shadow:
+   	0 1px rgba(255,255,255,.2) inset,
+   	0 3px 5px rgba(0,1,6,.5),
+   	0 0 1px 1px rgba(0,1,6,.2);
+  	transition: .2s ease-in-out;
+}
+nav.prot_1 ul li {
+	margin-left: 160px;
+}
+nav.pattern ul li {
+	margin-left: 154px;
+}
+nav.builder_p ul li {
+	margin-left: 151px;
+}
+nav.factory_method ul li {
+	margin-left: 151px;
+}
+nav.prototype ul li {
+	margin-left: 155px;
+}
+nav.singleton ul li {
+	margin-left: 155px;
+}
+nav.final ul li {
+	margin-left: 158px;
+}
