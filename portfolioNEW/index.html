@@ -7,14 +7,17 @@
 	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+<section id="place_template"></section>
+
+  <script type="text/template" id="template">
 		<div id="slider">
 			<div id="slide_text">
 				<h1>Орлюк Людмила</h1>
@@ -37,8 +40,8 @@
 					                    <span class="icon-bar"></span>
 					                    <span class="icon-bar"></span>
 					                </button>
-		                		<a class="navbar-brand page-scroll" href="#slider">Orlyuk</a>
-		           			 </div>
+		                			<a class="navbar-brand page-scroll" href="#slider">Orlyuk</a>
+		           				 </div>
 		            		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				                <ul class="nav navbar-nav navbar-right">
 				                    <li><a class="page-scroll red" href="#about">About Me</a></li>
@@ -65,7 +68,6 @@
 								<div class="cell2">
 									<a href="../4etkost/index.html"><img src="img/job_3.png" alt="portfolio1"></a>
 								</div>
-											
 								<div class="cell2">
 									<a href="../proekt/index.html"><img src="img/job_4.png" alt="portfolio1"></a>
 								</div>
@@ -89,8 +91,7 @@
 										
 									</ol>
 						</div>
-							<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 r">
-						</div>
+							<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 r"></div>
 			</div>
 </section>
 <section  class="skills" id="skill">
@@ -126,14 +127,10 @@
   						<div class="small_raund1"></div>
   					</div>
   				</div>
-  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-  						
-  				</div>
+  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"></div>
  		</div>
  		<div class="row">
-  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-  						
-  				</div>
+  				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"></div>
   				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
   					<div class="line">
   						<div class="small_raund">
@@ -177,10 +174,17 @@
 			<p>Orlyuk Lyudmyla</p><br>
 		</div>
 	</div>
-</div>
+	</div>
 </footer>
-<div class="row down_black">
-	<p></p>
-</div>
+	<div class="row down_black">
+		<p></p>
+	</div>
+</script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+  <script src="script.js"></script>
+</script>
 </body>
 </html>	
